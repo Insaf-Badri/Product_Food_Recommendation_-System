@@ -39,8 +39,7 @@ html css js  (for web interface)
 Product_Food_Recommendation_System/
 ├── French-dataset/
 │   └── cleaned_data.csv          
-├── models/
-│   └── recipe_recommender2.pkl   
+└── recipe_recommender2.pkl   
 ├── images/
 │   ├── im1.png         
 │   ├── im2.png         
@@ -87,9 +86,7 @@ Product_Food_Recommendation_System/
 - **Modern Gradient Design**: Purple-pink aesthetic with floating food icons
 - **Intuitive Forms**: Easy-to-use input fields for recipes and preferences
 - **Responsive Cards**: Clean product display with key metrics
-- **Interactive Filters**: Real-time filtering capabilities
-- **Multi-language Support**: Interface text in French (Tahiya | Imarwa)
-- **Professional Layout**: Clean, modern design with excellent UX/UI
+
 
 ## 🤝 Contributing
 
