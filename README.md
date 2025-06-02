@@ -11,20 +11,20 @@ An AI-powered food product recommendation system that helps users discover the p
 
 ### 🥗 Advanced Filtering Options
 - **Nutritional Filters**:
-  - Maximum Calories (per 100g)
-  - Maximum Sugar content (g per 100g)
-  - Minimum Protein content (g per 100g)
+- Maximum Calories (per 100g)
+- Maximum Sugar content (g per 100g)
+- Minimum Protein content (g per 100g)
 - **NutriScore Integration**: Filter by health ratings (A-E scale)
 - **Allergen Management**: Exclude specific allergens (Gluten, Milk, Eggs, etc.)
 
-### 📊 Detailed Product Information
+### Detailed Product Information
 - **Match Score**: Percentage-based ingredient compatibility
 - **Nutritional Data**: Calories, Protein, Sugar content
 - **Health Rating**: NutriScore classification
 - **Brand Information**: Product manufacturer details
 - **Category Classification**: Product categorization
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 ```bash
@@ -32,7 +32,7 @@ python 3.8+
 pandas
 numpy
 scikit-learn
-streamlit (for web interface)
+html css js  (for web interface)
 ```
 
 ### Installation
@@ -51,9 +51,9 @@ Product_Food_Recommendation_System/
 ├── models/
 │   └── recipe_recommender2.pkl   # Trained ML model (463MB, stored in LFS)
 ├── images/
-│   ├── landing-page.png         # Landing page screenshot
-│   ├── recipe-input.png         # Recipe input interface
-│   └── recommendations.png      # Product recommendations view
+│   ├── im1.png         # Landing page screenshot
+│   ├── im2.png         # Recipe input interface
+│   └── im3.png      # Product recommendations view
 ├── app.py                        # Main Streamlit application
 ├── requirements.txt              # Python dependencies
 ├── .gitattributes               # Git LFS configuration
@@ -150,13 +150,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - GitHub: [@Insaf-Badri](https://github.com/Insaf-Badri)
 - Project: [Product Food Recommendation System](https://github.com/Insaf-Badri/Product_Food_Recommendation_-System)
 
-## 🙏 Acknowledgments
 
-- French food product database providers
-- Streamlit community for UI components
-- Open source machine learning libraries
-- NutriScore system for health classifications
 
----
-
- Discover the perfect ingredients for your recipes! 🍽️*
+Discover the perfect ingredients for your recipes! 🍽️*
