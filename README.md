@@ -35,29 +35,20 @@ scikit-learn
 html css js  (for web interface)
 ```
 
-### Installation
-```bash
-git clone https://github.com/Insaf-Badri/Product_Food_Recommendation_System.git
-cd Product_Food_Recommendation_System
-pip install -r requirements.txt
-```
-
-
 ## 📁 Project Structure
 ```
 Product_Food_Recommendation_System/
 ├── French-dataset/
-│   └── cleaned_data.csv          # Product database (80MB)
+│   └── cleaned_data.csv          
 ├── models/
-│   └── recipe_recommender2.pkl   # Trained ML model (463MB, stored in LFS)
+│   └── recipe_recommender2.pkl   
 ├── images/
-│   ├── im1.png         # Landing page screenshot
-│   ├── im2.png         # Recipe input interface
-│   └── im3.png      # Product recommendations view
-├── app.py                        # Main Streamlit application
-├── requirements.txt              # Python dependencies
-├── .gitattributes               # Git LFS configuration
-└── README.md                    # Project documentation
+│   ├── im1.png         
+│   ├── im2.png         
+│   └── im3.png      
+├── app.py                                     
+├── .gitattributes              
+└── README.md                    
 ```
 
 ## 🔧 How It Works
@@ -69,39 +60,18 @@ Product_Food_Recommendation_System/
 5. **Scoring**: Each product receives a match score based on ingredient compatibility
 6. **Recommendation**: Top-rated products are displayed with detailed nutritional information
 
-## 📈 Algorithm Details
 
-The recommendation system uses:
-- **Natural Language Processing** for recipe analysis
-- **Ingredient Matching Algorithm** for product compatibility
-- **Nutritional Scoring System** based on health metrics
-- **Filter Integration** for personalized recommendations
-
-## 🎯 Example Use Cases
-
-- **Dietary Restrictions**: Find gluten-free alternatives for traditional recipes
-- **Health-Conscious Cooking**: Discover low-sugar, high-protein ingredients
-- **Recipe Optimization**: Improve nutritional value of existing recipes
-- **Product Discovery**: Explore new brands and product categories
-
-## 📊 Dataset Information
-
-- **Product Database**: 80MB+ French food product dataset
-- **Coverage**: Wide range of food categories and brands
-- **Nutritional Data**: Comprehensive macro and micronutrient information
-- **Health Ratings**: NutriScore classifications for all products
 
 ## 🛠️ Technical Stack
 
 - **Backend**: Python, Pandas, NumPy
 - **Machine Learning**: Scikit-learn, Custom recommendation algorithms
-- **Frontend**: Streamlit with custom CSS styling
+- **Frontend**: html with custom CSS styling and js
 - **Data Storage**: CSV database with Git LFS for large files
-- **Deployment**: Streamlit Cloud compatible
+- **Deployment**: not yet 
 
 ## 🎨 User Interface
 
-### Screenshots
 
 #### 1. Landing Page
 ![Landing Page](images/im2.png)
@@ -121,15 +91,6 @@ The recommendation system uses:
 - **Interactive Filters**: Real-time filtering capabilities
 - **Multi-language Support**: Interface text in French (Tahiya | Imarwa)
 - **Professional Layout**: Clean, modern design with excellent UX/UI
-
-## 🔮 Future Enhancements
-
-- [ ] Recipe image recognition
-- [ ] Meal planning integration
-- [ ] Shopping list generation
-- [ ] Nutritional goal tracking
-- [ ] Social recipe sharing
-- [ ] Multi-language expansion
 
 ## 🤝 Contributing
 
