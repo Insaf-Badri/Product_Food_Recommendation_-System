@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommender - Find Perfect Ingredients</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body>
+    <!-- Floating Food Elements -->
+    <div class="floating-food" style="top: 10%; left: 10%;">🍎</div>
+    <div class="floating-food" style="top: 20%; right: 15%;">🥕</div>
+    <div class="floating-food" style="top: 60%; left: 5%;">🍞</div>
+    <div class="floating-food" style="top: 70%; right: 10%;">🧄</div>
+    <div class="floating-food" style="top: 30%; left: 80%;">🥬</div>
+    <div class="floating-food" style="top: 50%; left: 90%;">🍅</div>
+    <div class="floating-food" style="top: 80%; left: 20%;">🥖</div>
+    <div class="floating-food" style="top: 15%; left: 60%;">🥑</div>
+    <div class="floating-food" style="top: 85%; right: 30%;">🍋</div>
+    <div class="floating-food" style="top: 40%; right: 5%;">🥔</div>
+
+    <!-- Home Page -->
+    <div class="home-container" id="homePage">
+        <div class="logo">🍳</div>
+        <h1 class="title">Recipe Recommender</h1>
+        <p class="subtitle">
+            Tahiya l lmarwa 
+            Discover the perfect ingredients for your recipes! Our AI-powered recommender analyzes your recipe and suggests the best products based on nutritional value, ingredients, and dietary preferences.
+        </p>
+        <button class="start-btn" onclick="showRecipeForm()">
+            Start Cooking! 🤗
+        </button>
+    </div>
+
+    <!-- Recipe Form -->
+    <div class="recipe-container" id="recipeForm">
+        <button class="back-btn" onclick="showHomePage()">← Back to Home</button>
+        
+        <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">Find Your Perfect Ingredients</h2>
+        
+        <form id="recommendationForm">
+            <div class="form-group">
+                <label for="recipeText">Recipe Description</label>
+                <textarea id="recipeText" rows="4" placeholder="Describe your recipe... 🤗"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Ingredients</label>
+                <div class="ingredients-input">
+                    <input type="text" id="ingredientInput" placeholder="Add an ingredient... e.g., flour, sugar, eggs">
+                    <button type="button" class="add-ingredient" onclick="addIngredient()">Add</button>
+                </div>
+                <div id="ingredientTags"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Dietary Filters (Optional)</label>
+                <div class="filters-grid">
+                    <div>
+                        <label for="maxCalories" style="font-size: 0.9rem;">Max Calories (per 100g)</label>
+                        <input type="number" id="maxCalories" placeholder="e.g., 300">
+                    </div>
+                    <div>
+                        <label for="maxSugar" style="font-size: 0.9rem;">Max Sugar (g per 100g)</label>
+                        <input type="number" id="maxSugar" placeholder="e.g., 10">
+                    </div>
+                    <div>
+                        <label for="minProtein" style="font-size: 0.9rem;">Min Protein (g per 100g)</label>
+                        <input type="number" id="minProtein" placeholder="e.g., 8">
+                    </div>
+                    <div>
+                        <label for="nutriScore" style="font-size: 0.9rem;">NutriScore</label>
+                        <select id="nutriScore" multiple style="height: 120px;">
+                            <option value="A">A (Best)</option>
+                            <option value="B">B (Good)</option>
+                            <option value="C">C (Average)</option>
+                            <option value="D">D (Poor)</option>
+                            <option value="E">E (Worst)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="excludeAllergens">Exclude Allergens</label>
+                <select id="excludeAllergens" multiple style="height: 100px;">
+                    <option value="gluten">Gluten</option>
+                    <option value="milk">Milk</option>
+                    <option value="eggs">Eggs</option>
+                    <option value="nuts">Nuts</option>
+                    <option value="soy">Soy</option>
+                </select>
+            </div>
+
+            <button type="submit" class="recommend-btn" , onclick="displayResults()">Get Recommendations 🔍</button>
+        </form>
+
+        <!-- Results Section -->
+        <div class="results-container" id="resultsContainer">
+            <h3 style="margin-bottom: 1rem; color: #333;">Recommended Products</h3>
+            <div id="resultsContent"></div>
+        </div>
+    </div>
+</body>
+</html>
