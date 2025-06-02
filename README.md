@@ -104,7 +104,7 @@ The recommendation system uses:
 ### Screenshots
 
 #### 1. Landing Page
-![Landing Page]("images/im2.png")
+![Landing Page](images/im2.png)
 
 #### 2. Recipe Input Interface
 ![Recipe Input](images/im3.png)
