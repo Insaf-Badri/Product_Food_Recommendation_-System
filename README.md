@@ -7,7 +7,6 @@ An AI-powered food product recommendation system that helps users discover the p
 ### 🔍 Smart Recipe Analysis
 - **Recipe Description Input**: Describe your recipe
 - **Ingredient Matching**: AI analyzes and matches ingredients with available products
-- **Multi-language Support**: Interface available in French 
 
 ### 🥗 Advanced Filtering Options
 - **Nutritional Filters**:
