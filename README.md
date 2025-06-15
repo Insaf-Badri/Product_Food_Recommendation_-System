@@ -66,7 +66,6 @@ Product_Food_Recommendation_System/
 - **Machine Learning**: Scikit-learn, Custom recommendation algorithms
 - **Frontend**: html with custom CSS styling and js
 - **Data Storage**: CSV database with Git LFS for large files
-- **Deployment**: not yet 
 
 ## 🎨 User Interface
 
